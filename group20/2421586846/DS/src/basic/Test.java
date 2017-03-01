@@ -1,22 +1,11 @@
 package basic;
 
-
-import java.util.Arrays;
-
 public class Test {
 
 	public static void main(String[] args) {
-		LinkedList ll = new LinkedList();
-		ll.add(0);
-		ll.add(1);
-		ll.add(2);
-		ll.add(3);
-		ll.add(4);
+		TestArrayList();
+				
 		
-		LinkedList aa=ll;
-		ll.add(0,10);
-		System.out.println(aa.get(0));
-	
 	}
 	public static void TestQueue(){
 		Queue qu= new Queue();
@@ -72,25 +61,28 @@ public class Test {
 	public static void TestArrayList(){
 		// TODO Auto-generated method stub
 		ArrayList arraylist1= new ArrayList();
-		arraylist1.add(3);
+		arraylist1.add(0,3);
 
-		arraylist1.add(2);
+		arraylist1.add(0,2);
 
 		arraylist1.add(0,7);
+		
 
-		arraylist1.add(2,8);
+		arraylist1.add(0,8);
 
 		arraylist1.add(0,10);
 
 		arraylist1.add(0,13);
 		
+		arraylist1.remove(0);
+
+		arraylist1.remove(0);
 		for (int i = 0 ;i <  arraylist1.size();i++){
 			System.out.println(arraylist1.get(i));
 		}
-		System.out.println("ok");
-		arraylist1.remove(0);
+		/*
 
-		arraylist1.remove(1);
+		 
 		
 		for (int i = 0 ;i <  arraylist1.size();i++){
 			System.out.println(arraylist1.get(i));
