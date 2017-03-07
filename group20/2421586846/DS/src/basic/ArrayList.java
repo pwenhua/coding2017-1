@@ -75,3 +75,7 @@ public class ArrayList implements List {
 	}
 	
 }
+
+private class Iter (){
+	
+}
